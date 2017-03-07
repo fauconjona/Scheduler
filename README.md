@@ -35,5 +35,21 @@ This is my first tool for GTANetwork. It's a simple Scheduler to execute specifi
 	- value : The value used by the task
 	- time : Time to execute the task
 	- action (optional): only for "resource" type, specify the action to do with the resource
+	
+###Custom event:
+
+In your C# file, add :
+
+```
+API.exported.scheduler.OnScheduleEvent += new ExportedEvent(Scheduler_OnScheduleEvent);
+
+//...
+
+private void Scheduler_OnScheduleEvent(object[] args)
+{
+	API.consoleOutput("Event :" + (string)args[0]);
+}
+
+```
 
 To finish, add ```<resource src="scheduler" />``` in "settings.xml"
