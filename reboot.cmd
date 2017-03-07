@@ -1,7 +1,7 @@
 @echo off
 echo.
 echo KILLING GTANetworkServer.exe
-set serverkill="C:\_Data_Serveurs_\RootServeurGTA\ServeurGTA #1\"
+set serverkill="GTANetworkServer_PATH\"
 cd /d %serverkill%
 taskkill /im GTANetworkServer.exe /F
 echo.
@@ -11,7 +11,7 @@ timeout 10
 echo.
 echo STARTING GTANetworkServer
 :: start the server..
-set serverpath="C:\_Data_Serveurs_\RootServeurGTA\ServeurGTA #1\"
+set serverpath="GTANetworkServer_PATH\"
 cd /d %serverpath%
 start "" "GTANetworkServer.exe"
 echo.
