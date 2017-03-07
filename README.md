@@ -20,12 +20,12 @@ This is my first tool for GTANetwork. It's a simple Scheduler to execute specifi
 	3. Now, how to configure the "schedules.xml":
 ```
 <schedules>
-  <job type="message" value="This message was sent by Scheduler!" time="00:50" /><!-- Send a global message-->
-  <job type="process" value="reboot.cmd" time="01:11:00" /><!-- Execute a process-->
-  <job type="ressource" value="speedometer" time="01:21" action="start" /><!-- Start a ressource-->
-  <job type="ressource" value="speedometer" time="01:22" action="stop" /><!-- Stop a ressource-->
-  <job type="ressource" value="speedometer" time="01:23" action="restart" /><!-- Restart a ressource-->
-  <job type="event" value="myEvent" time="02:05" /><!-- Trigger a custom event-->
+  <job type="message" value="This message was sent by Scheduler!" time="12:00" /><!-- Send a global message-->
+  <job type="process" value="reboot.cmd" time="13:00:00" /><!-- Execute a process-->
+  <job type="ressource" value="speedometer" time="14:00" action="start" /><!-- Start a ressource-->
+  <job type="ressource" value="speedometer" time="14:15" action="stop" /><!-- Stop a ressource-->
+  <job type="ressource" value="speedometer" time="14:30" action="restart" /><!-- Restart a ressource-->
+  <job type="event" value="myEvent" time="15:00" /><!-- Trigger a custom event-->
 </schedules>
 ```
 
@@ -36,4 +36,4 @@ This is my first tool for GTANetwork. It's a simple Scheduler to execute specifi
 	- time : Time to execute the task
 	- action (optional): only for "resource" type, specify the action to do with the resource
 
-To finish, add <resource src="scheduler" /> in "settings.xml"
+To finish, add ```<resource src="scheduler" />``` in "settings.xml"
