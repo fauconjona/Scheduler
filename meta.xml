@@ -1,0 +1,12 @@
+﻿<meta>
+  <info name="Scheduler Tool" author= "Fauconjona" version="1.0" type="script" async="true" />
+
+  <script src="scheduler.dll" type="server" lang="compiled" />
+
+  <settings>
+    <setting name="debug" value="true" default="false"/>
+  </settings>
+
+  <export class="Scheduler" event="OnScheduleEvent" />
+  
+</meta>
