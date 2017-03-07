@@ -1,8 +1,8 @@
 <schedules>
   <job type="message" value="This message was sent by Scheduler!" time="12:00" />
   <job type="process" value="reboot.cmd" time="13:00:00" />
-  <job type="ressource" value="speedometer" time="14:00" action="start" />
-  <job type="ressource" value="speedometer" time="14:15" action="stop" />
-  <job type="ressource" value="speedometer" time="14:30" action="restart" />
+  <job type="resource" value="speedometer" time="14:00" action="start" />
+  <job type="resource" value="speedometer" time="14:15" action="stop" />
+  <job type="resource" value="speedometer" time="14:30" action="restart" />
   <job type="event" value="myEvent" time="15:00" />
 </schedules>

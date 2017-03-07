@@ -5,7 +5,7 @@ This is my first tool for GTANetwork. It's a simple Scheduler to execute specifi
 ###What kind of things can you do:
 
 	-Send a global message
-	-Start/Stop/Restart a ressource
+	-Start/Stop/Restart a resource
 	-Trigger a custom event
 	-Execute a process
 
@@ -22,9 +22,9 @@ This is my first tool for GTANetwork. It's a simple Scheduler to execute specifi
 <schedules>
   <job type="message" value="This message was sent by Scheduler!" time="12:00" /><!-- Send a global message-->
   <job type="process" value="reboot.cmd" time="13:00:00" /><!-- Execute a process-->
-  <job type="ressource" value="speedometer" time="14:00" action="start" /><!-- Start a ressource-->
-  <job type="ressource" value="speedometer" time="14:15" action="stop" /><!-- Stop a ressource-->
-  <job type="ressource" value="speedometer" time="14:30" action="restart" /><!-- Restart a ressource-->
+  <job type="resource" value="speedometer" time="14:00" action="start" /><!-- Start a ressource-->
+  <job type="resource" value="speedometer" time="14:15" action="stop" /><!-- Stop a ressource-->
+  <job type="resource" value="speedometer" time="14:30" action="restart" /><!-- Restart a ressource-->
   <job type="event" value="myEvent" time="15:00" /><!-- Trigger a custom event-->
 </schedules>
 ```
